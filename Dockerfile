@@ -20,7 +20,7 @@ RUN curl -sSL "${ANDROID_SDK_URL}" | tar --no-same-owner -xz -C ${SDK_HOME}
 ENV ANDROID_HOME ${SDK_HOME}/android-sdk-linux
 ENV GRADLE_HOME /usr/local/gradle-2.14.1
 ENV ANDROID_SDK ${SDK_HOME}/android-sdk-linux
-ENV PATH ${ANDROID_HOME}/tools:$ANDROID_HOME/platform-tools:$PATH
+ENV PATH ${ANDROID_HOME}/tools:$ANDROID_HOME/platform-tools:$GRADLE_HOME/bin:$PATH
 
 # Install Android SDK components
 

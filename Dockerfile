@@ -8,7 +8,8 @@ MAINTAINER seasonyuu <seasonyuu@gmail.com>
 RUN dpkg --add-architecture i386 && \
     apt-get -qq update && \
     apt-get -qqy install libc6:i386 libstdc++6:i386 zlib1g:i386 libncurses5:i386 tar git --no-install-recommends && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* &&\
+    apt-get install zip
 
 
 
